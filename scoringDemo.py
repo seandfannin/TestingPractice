@@ -9,6 +9,14 @@ class ScoreMachine:
                 total += item
         return total
     
+    
+    def twos(self,rolls):
+        total = 0
+        for item in rolls:
+            if item == 2:
+                total += item
+        return total;
+    
 def testAces():
     x = ScoreMachine()
     assert 5 == x.aces([1,1,1,1,1])
